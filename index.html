@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5 перцев</title>
+    <link rel="shortcut icon" href="/img/favikon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+        <img src="img/logo.png" alt="" class="sidebar__logo_img">
+    </div>
+    <div class="sidebar__menu">
+        <ul class="ul-sidebar__menu main-menu">
+            <li class="main-menu__item"><a href="#" class="main-menu__item_link">Первая ссылка</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__item_link main-menu__item_link-active">Вторая ссылка (активная)</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__item_link">Третья ссылка</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__item_link">Личный кабинет</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__item_link">Выйти</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page" id="page">
+    <div class="header" id="header">
+        <div class="header__block">
+            <h1 class="header__block_title">Заголовок страницы</h1>
+            <p class="header__block_body">В отличие от пылевого и ионного хвостов, направление поступает<br>
+                в лимногляциальный часовой угол</p>
+        </div>
+    </div><!--header-->
+
+    <div class="content" id="content">
+        <div class="content__block">
+            <div class="content__block_info block-info">
+                <p class="normal-text content__block_title">Информация по оплате:</p>
+                <div class="block-info__title">
+                    <p class="normal-text block-info__title_item">Номер счета:</p>
+                    <p class="normal-text block-info__title_item">Сумма платежа:</p>
+                </div>
+                <div class="block-info__body">
+                    <p class="normal-text block-info__body_item">87123658716587</p>
+                    <p class="normal-text block-info__body_item">100 руб.</p>
+                </div>
+            </div>
+            <div class="content__block_webform webform">
+                <h2 class="webform__title">Данные банковской карты</h2>
+                <form action="" class="webform__form form" id="form" onsubmit="return validateForm();">
+                    <div class="webform__form_cartnomber cartnomber-block">
+                        <p class="normal-text cartnomber-block__title">Номер карты</p>
+                        <input type="text" class="CardNumber1 form__CardNumber " id="CardNumber1" name="Поле 1" value="" maxlength="4" placeholder="" onkeyup="test(this);validate(this);return false;" oninput="validate(this);test(this);return false;">
+                        <input type="text" class="CardNumber2 form__CardNumber " id="CardNumber2" name="Поле 2" value="" maxlength="4" placeholder="" onkeyup="test(this);validate(this);return false;" oninput="validate(this);test(this);return false;">
+                        <input type="text" class="CardNumber3 form__CardNumber " id="CardNumber3" name="Поле 3" value="" maxlength="4" placeholder="" onkeyup="test(this);validate(this);return false;" oninput="validate(this);test(this);return false;">
+                        <input type="text" class="CardNumber4 form__CardNumber " id="CardNumber4" name="Поле 4" value="" maxlength="4" placeholder="" onkeyup="test(this);validate(this);return false;" oninput="validate(this);test(this);return false;">
+                    </div>
+                    <div class="webform__form_data">
+                        <p class="normal-text webform__form_data-title">Номер карты</p>
+                        <div class="background__select-1">
+                            <div class="webform__form_data-item-months-block"><select class="webform__form_data-item webform__form_data-item-months" name="months" form="form" onchange = "window.location=document.forms[0].mymenu.options[document.forms[0].mymenu.selectedIndex].value">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select></div>
+                        </div>
+                        <div class="background__select-2">
+                            <div class="webform__form_data-item-age-block">
+                                <select class="webform__form_data-item webform__form_data-item-age" name="age" form="form" onchange = "window.location=document.forms[0].mymenu.options[document.forms[0].mymenu.selectedIndex].value">
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                </select></div>
+                        </div>
+
+                    </div>
+                    <input  type="text" id="name" name="Имя" value="" maxlength="" placeholder="Держатель карты" oninput="validateTxt(this);" style="">
+                    <div class="cvv2-block">
+                        <p class="normal-text cvv2-block__title">Код CVV2 / CVC2</p>
+                        <input type="text" id="CVV2" name="Имя" value="" maxlength="" placeholder="" oninput="validate(this);"><img src="img/quest.png" class="cvv2-block__img"><div class="block-info">од CVV2 / CVC2 - это систематический уход. Лисичка традиционно трансформирует</div>
+                    </div>
+                    <div class="form-submited-block">
+                        <input class="form-submit button-primary" type="submit" name="op" value="Оплатить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--content-->
+
+    <div class="footer" id="footer">
+        <div class="footer__block">
+            <p class="footer__block_text">
+                Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+            <p class="footer__block_text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+            <p class="footer__block_text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+                Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+            </p>
+        </div>
+    </div><!--footer-->
+</div><!--page-->
+
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript">
+    function test(obj) {//валидация для номера карты
+        let CardNumber1 = document.getElementById('CardNumber1');
+        let CardNumber2 = document.getElementById('CardNumber2');
+        let CardNumber3 = document.getElementById('CardNumber3');
+        let CardNumber4 = document.getElementById('CardNumber4');
+
+        if (obj.value.length == 4) {// перещелкиваем на следующую
+            let next = obj.nextSibling;
+            while(next.nodeType != 1 && next.nextSibling)
+                next = next.nextSibling;
+            if (next.nodeType == 1)
+                next.focus();
+        }
+    }
+
+    function validate(inp) {
+        inp.value = inp.value.replace(/[^0-9]/, "");//только цыфры
+    }
+
+    function validateTxt(inp) {
+        inp.value = inp.value.replace(/[^A-z$ ]/, "");//только лат.символы в любом регистре
+    }
+    function validateForm() {//валидация всей формы
+        let CardNumber1 = document.getElementById('CardNumber1');
+        let CardNumber2 = document.getElementById('CardNumber2');
+        let CardNumber3 = document.getElementById('CardNumber3');
+        let CardNumber4 = document.getElementById('CardNumber4');
+        let nameIput1 = document.getElementById('name');
+        let CVV2 = document.getElementById('CVV2');
+
+        if(CardNumber1.value === "" || CardNumber1.value.length !== 4){
+            CardNumber1.style.border = "1px solid red";//ошибка
+            return false;
+        }
+        else{
+            CardNumber1.style.border = "1px solid #e4e9ee";
+        }
+        if(CardNumber2.value === "" || CardNumber2.value.length !== 4){
+            CardNumber2.style.border = "1px solid red";
+            return false;
+        }
+        else{
+            CardNumber2.style.border = "1px solid #e4e9ee";
+        }
+        if(CardNumber3.value === "" || CardNumber3.value.length !== 4){
+            CardNumber3.style.border = "1px solid red";
+            return false;
+        }
+        else{
+            CardNumber3.style.border = "1px solid #e4e9ee";
+        }
+        if(CardNumber4.value === "" || CardNumber4.value.length !== 4){
+            CardNumber4.style.border = "1px solid red";
+            return false;
+        }
+        else{
+            CardNumber4.style.border = "1px solid #e4e9ee";
+        }
+        if(nameIput1.value === ""  || nameIput1.value.length < 6){
+            nameIput1.style.border = "1px solid red";
+            return false;
+        }
+        else{
+            nameIput1.style.border = "1px solid #e4e9ee";
+        }
+        if(CVV2.value.length !== 3 ){
+            CVV2.style.border = "1px solid red";
+            return false;
+        }
+        else{
+            CVV2.style.border = "1px solid #e4e9ee";
+        }
+
+
+    }
+
+</script>
+</html>
