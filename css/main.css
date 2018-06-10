@@ -366,7 +366,7 @@ body {
   padding-top: 22px;
   margin-bottom: 5px;
 }
-.block-info {
+.block-info-cvv2 {
   visibility: hidden;
   position: absolute;
   right: 0;
@@ -377,7 +377,7 @@ body {
   transition: .5s;
   opacity: 0;
 }
-.cvv2-block__img:hover + .block-info {
+.cvv2-block__img:hover + .block-info-cvv2 {
   visibility: visible;
   opacity: 1;
 }
